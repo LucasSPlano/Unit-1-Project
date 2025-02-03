@@ -3,13 +3,42 @@
 
 //1. Declare a class called Song, it's constructor should take three parameters: title, artist, album
 
-
+class Song {
+    constructor(title, artist, album){
+        this.title = title;
+        this.artist = artist;
+        this.album = album;
+    }
+}
 
 //2. Declare a class called Musician, it's constructor should take three parameters: name, instrument, genre
 
-
+class Musician {
+    constructor(name, instrument, genre){
+        this.name = name;
+        this.instrument = instrument;
+        this.genre = genre;
+    }
+}
 
 //3. Declare a class called Playlist, it's constructor should take four parameters: name, song1, song2, song3, song4
+
+class Playlist {
+    constructor(name, song1, song2, song3, song4){
+        this.playlistName = name;
+        this.song1 = song1;
+        this.song2 = song2;
+        this.song3 = song3;
+        this.song4 = song4;
+    }
+    getInfo(){
+        console.log(`The playlist has the following songs:`);
+        console.log(`Slow Dancing in a Burning Room by John Mayer`);
+        console.log(`Lenny by Stevie Ray Vaughan`);
+        console.log(`Magnetar by Mark Lettieri`);
+    }
+}
+
 //4. this class should also define a method called getInfo() that prints text to the console saying
 //  The playlist (whatever name you gave it) has the following songs:
 //         (Song1 name) by (Song1 Artist Name),
@@ -19,5 +48,5 @@
 
 
 //5. export all three classes to make them available to the other JS files.
-
+export { Song, Musician, Playlist};
 
