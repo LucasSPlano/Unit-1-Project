@@ -32,10 +32,17 @@ class Playlist {
         this.song4 = song4;
     }
     getInfo(){
-        console.log(`The playlist has the following songs:`);
-        console.log(`Slow Dancing in a Burning Room by John Mayer`);
-        console.log(`Lenny by Stevie Ray Vaughan`);
-        console.log(`Magnetar by Mark Lettieri`);
+        //console.log(`The playlist has the following songs:`);
+        //console.log(`Slow Dancing in a Burning Room by John Mayer`);
+        //console.log(`Lenny by Stevie Ray Vaughan`);
+        //console.log(`Magnetar by Mark Lettieri`);
+
+        `
+        The Playlist ${this.name} has the following songs:
+        ${this.song1.title} by ${this.song1.artist.name},
+        ${this.song2.title} by ${this.song2.artist.name},
+        ${this.song3.title} by ${this.song3.artist.name},
+        `
     }
 }
 
